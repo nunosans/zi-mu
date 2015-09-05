@@ -1,19 +1,50 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-
+    <title>Zi Mu — Graphic Design Portfolio</title>
+    <!-- Technical Formating Meta Tags -->
+    <meta http-equiv="content-type"     content="charset=utf-8">
+    <meta http-equiv="content-language" content="en-gb">
+    <!-- Authoring Meta Tags -->
+    <meta name="author"    content="Nuno Coelho Santos">
+    <meta name="publisher" content="Nuno Coelho Santos">
+    <meta name="copyright" content="2015 by Nuno Coelho Santos">
+    <meta name="host"      content="linode.com">
+    <meta name="generator" content="Sublime Text 3">
+    <!-- Search Eengine and Browser Meta Tags -->
+    <meta name="description"   content="Online portfolio of Zi Mu, Graphic Designer based in London, UK.">
+    <meta name="abstract"      content="Online portfolio of Zi Mu, Graphic Designer based in London, UK.">
+    <meta name="keywords"      content="site, keywords">
+    <meta name="revisit-after" content="180 days">
+    <meta name="rating"        content="General">
+    <!-- Browser Compability Meta Tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1">
+    <!-- Open Graph Meta Tags (ogp.me) -->
+    <meta property="og:image"            content="http://zimudesign.com/images/open-graph-image.jpg">
+    <meta property="og:site_name"        content="Zi Mu — Graphic Design Portfolio">
+    <meta property="og:title"            content="Zi Mu — Graphic Design Portfolio">
+    <meta property="og:description"      content="Online portfolio of Zi Mu, Graphic Designer based in London, UK.">
+    <meta property="og:type"             content="portfolio">
+    <meta property="og:url"              content="http://zimudesign.com/index.html">
+    <meta property="og:locale"           content="en_GB">
+    <!-- Favicon Meta Tags (use both) -->
+    <link rel="icon"          href="http://zimudesign.com/favicon.ico">
+    <link rel="shortcut icon" href="http://zimudesign.com/favicon.ico">
+    <!-- Apple iOS Meta Tags -->
+    <meta name="viewport"                     content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <!-- Stylesheets -->
     <%= stylesheet_link_tag "reset", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <!-- Humans -->
+    <link rel="author" href="/humans.txt">
   </head>
+  <body>
 
-  <body class="<%= page_classes %>">
     <%= yield %>
+
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <%= javascript_include_tag  "all" %>
+
   </body>
 </html>
