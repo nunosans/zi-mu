@@ -1,1 +1,138 @@
 @charset "utf-8";
+
+* {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+body {
+  background-color: darken(white, 8%);
+  color: lighten(black, 16%);
+  line-height: 19px;
+  font-family: "aktiv-grotesk", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-color: white;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px 36px;
+  overflow: hidden;
+  border-bottom: 2px solid darken(white, 8%);
+  @media (min-width: 980px) {
+    background-color: darken(white, 8%);
+  }
+  h1, h2 {
+    float: left;
+    width: 100%;
+    @media (min-width: 980px) {
+      width: 620px;
+    }
+  }
+  span {
+    font-family: "aktiv-grotesk", "Helvetica Neue", sans-serif;
+    float: left;
+    width: 100%;
+    color: lighten(black, 50%);
+    margin-top: 20px;
+    @media (min-width: 980px) {
+      float: right;
+      width: 300px;
+      margin-top: 0;
+    }
+    a {
+      font-family: "aktiv-grotesk", "Helvetica Neue", sans-serif;
+      color: lighten(black, 25%);
+      text-decoration: none;
+      display: inline-block;
+      line-height: 16px;
+      border-bottom: 1.25px solid rgba(black, 0.2);
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1.25px solid rgba(black, 0.6);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: darken(white, 8%);
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 20px 100px;
+}
+
+article {
+  background-color: white;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  header {
+    background-color: white;
+    padding-top: 22px;
+    padding-bottom: 66px;
+    border-bottom: none;
+  }
+  footer {
+    background-color: white;
+  }
+  + article {
+    border-top: 2px solid darken(white, 8%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "aktiv-grotesk", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  color: lighten(black, 25%);
+
+}
+
+h2 {
+  color: lighten(black, 25%);
+}
+
+h3 {
+  font-size: 220%;
+  line-height: 38px;
+  margin: 40px 0 6px;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+h6 {
+  color: lighten(black, 50%);
+}
+
+p {
+  font-family: "aktiv-grotesk", "Helvetica Neue", sans-serif;
+  max-width: 460px;
+  color: lighten(black, 16%);
+  padding: 3px 20px 16px;
+}
+
+figure {
+  padding: 20px 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    font-family: "aktiv-grotesk", "Helvetica Neue", sans-serif;
+    padding: 10px 20px 1px;
+    color: lighten(black, 50%);
+    font-size: 85%;
+    line-height: 10px;
+  }
+}
